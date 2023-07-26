@@ -1,3 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --main-color: #000;
+    --text-color: #000;
+    --secondary-text-color: #000;
+    --color-1: #000;
+    --color-2: #000;
+    --color-3: #000;
+}
+html{
+    font-family: Poppins, sans-serif;
+    font-size: 14pt;
+}
 body{
+    min-height: 100vh;
     background-color: blue;
+}
+ul{
+    list-style-type: none;
+}
+.container{
+    background-color: white;
+    border: 1px solid black;
+}
+.grid-layout{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 100%;
+    height: 100vh;
+    width: 80%;
+    margin: 0 auto;
 }
