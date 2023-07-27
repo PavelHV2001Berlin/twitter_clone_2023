@@ -122,5 +122,16 @@ main .timeline_header .timeline_header_navigation{
 }
 .tweet_interaction_container{
     display: flex;
+    margin-top: 12px;
     justify-content: space-between;
+}
+.tweet_interaction_container > span{
+    display: flex;
+    color: #555;
+    align-items: center;
+    gap: 12px;
+}
+span.twitter_tag{
+    margin-left: 5px;
+    color: #555;
 }
