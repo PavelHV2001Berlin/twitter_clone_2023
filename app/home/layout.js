@@ -3,10 +3,10 @@ import '@styles/globals.css';
 import NavigationBar from '@components/NavigationBar';
 import Trends from '@components/Trends';
 export const metadata = {
-    title: "Login",
+    title: "Twitter-Clone",
     description: 'Discover & Share AI Prompts'
 }
-const LoginLayout = ({children}) => {
+const RootLayout = ({children}) => {
   return (
     <html lang='en'>
       <head>
@@ -14,7 +14,16 @@ const LoginLayout = ({children}) => {
 
       </head>
         <body>
-            {children}
+
+          <div className='grid-layout'>
+            <NavigationBar/>
+              <main className='container'>
+                  {children}
+              </main>
+              <aside className='container'>
+                <Trends/>
+              </aside>
+          </div>
             
         </body>
 
@@ -22,4 +31,4 @@ const LoginLayout = ({children}) => {
   )
 }
 
-export default LoginLayout;
+export default RootLayout;

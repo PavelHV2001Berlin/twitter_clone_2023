@@ -135,3 +135,12 @@ span.twitter_tag{
     margin-left: 5px;
     color: #555;
 }
+.tweet_input_area input{
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-size: 20pt;
+}
+.tweet_input_area input:focus{
+    outline: none;
+}
