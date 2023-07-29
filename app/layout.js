@@ -14,7 +14,10 @@ const LoginLayout = ({children}) => {
 
       </head>
         <body>
-            {children}
+            <div className='login_background_overlay'>
+                {children}
+
+            </div>
             
         </body>
 
